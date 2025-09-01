@@ -1,0 +1,30 @@
+keys/gcp-sa.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Credentials & env
+.env
+keys/
+*.pem
+*.key
+*.crt
+
+# Local data files
+data/*.csv
+*.xlsx
+
+# Airflow (if you add later)
+airflow/logs/
+airflow/keys/
