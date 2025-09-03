@@ -1,0 +1,29 @@
+drilldown_profile:
+  target: core
+  outputs:
+    raw:
+      type: bigquery
+      method: service-account
+      project: drilldown-case-study
+      dataset: drilldown_raw
+      location: EU
+      keyfile: /Users/poojamangal/Downloads/Drilldown/airflow/keys/gcp-sa.json
+      threads: 4
+
+    core:
+      type: bigquery
+      method: service-account
+      project: drilldown-case-study
+      dataset: drilldown_core
+      location: EU
+      keyfile: /Users/poojamangal/Downloads/Drilldown/airflow/keys/gcp-sa.json
+      threads: 4
+
+    mart:
+      type: bigquery
+      method: service-account
+      project: drilldown-case-study
+      dataset: drilldown_mart
+      location: EU
+      keyfile: /Users/poojamangal/Downloads/Drilldown/airflow/keys/gcp-sa.json
+      threads: 4

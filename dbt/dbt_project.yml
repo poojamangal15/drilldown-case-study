@@ -1,0 +1,17 @@
+name: drilldown_dbt
+version: 1.0.0
+config-version: 2
+profile: drilldown_profile
+
+model-paths: ["models"]
+seed-paths: ["data"]
+
+models:
+  drilldown_dbt:
+    +materialized: table
+    # no +schema here
+
+seeds:
+  drilldown_dbt:
+    # no +schema here
+    +quote_columns: false

@@ -1,5 +1,3 @@
-keys/gcp-sa.json
-
 # OS / editor
 .DS_Store
 .vscode/
@@ -25,6 +23,19 @@ keys/
 data/*.csv
 *.xlsx
 
-# Airflow (if you add later)
+# dbt + Airflow
+dbt_packages/
+target/
+logs/
 airflow/logs/
 airflow/keys/
+airflow/keys/*.json
+.venv/
+__pycache__/
+
+
+# Editor / Cursor AI / VSCode junk
+.vscode/
+.cursor/
+*.cursorignore
+*.DS_Store

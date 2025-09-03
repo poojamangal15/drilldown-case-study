@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: drilldown_raw
+    tables:
+      - name: companies
+      - name: contacts
+      - name: deals
+      - name: invoices
+      - name: invoice_lines
+      - name: products

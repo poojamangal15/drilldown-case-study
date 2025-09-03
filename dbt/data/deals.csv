@@ -1,0 +1,95 @@
+deal_id,deal_name,company_id,amount,deal_stage,close_date,created_date,owner_id
+1001,Innovate CRM Upgrade Q2,1,25000,Closed Won,2023-05-15,2023-03-01,101
+1002,Quantum Mfg. Analytics Platform,2,50000,Closed Won,2023-06-20,2023-04-10,102
+1003,Apex Retail Marketing Suite,3,18000,Closed Lost,2023-07-01,2023-05-05,101
+1004,Nexus Health Support Renewal,4,30000,Closed Won,2023-08-10,2023-06-15,103
+1005,DataDriven Premium License Deal,6,75000,Closed Won,2023-09-05,2023-07-20,101
+1006,LogiCore Logistics API Integration,8,22000,Proposal Sent,2025-09-30,2025-08-15,102
+1007,Synergy Consulting CRM Licenses,10,32000,Closed Won,2024-01-10,2023-11-20,101
+1008,Vertex Financials Analytics Suite,12,65000,Negotiation,2025-10-15,2025-08-01,103
+1009,Momentum Motors CRM Overhaul,13,120000,Closed Won,2024-05-20,2024-03-01,102
+1010,BlueWave Telecom Support Package,14,45000,Qualification,2025-11-01,2025-08-25,104
+1011,Innovate Solutions Expansion,1,40000,Closed Won,2024-06-30,2024-04-15,101
+1012,Solaris Energy API Access,16,15000,Closed Won,2023-04-10,2023-02-15,103
+1013,AquaPure Systems Support Deal,17,25000,Closed Won,2023-05-12,2023-03-20,102
+1014,TerraFirm Realty CRM Licenses,18,12000,Closed Lost,2023-06-05,2023-04-15,104
+1015,Gastronomy Group Analytics,19,48000,Closed Won,2023-07-18,2023-05-25,104
+1016,AeroDynamics Implementation,20,150000,Closed Won,2023-08-22,2023-06-10,103
+1017,MindCraft Studios Premium Licenses,21,35000,Negotiation,2025-10-20,2025-08-05,101
+1018,BioGen Pharma Data Suite,22,250000,Closed Won,2023-10-11,2023-08-01,102
+1019,TrendSetters Fashion CRM,23,28000,Proposal Sent,2025-11-10,2025-09-01,104
+1020,SecureNet Cybersecurity Support,24,60000,Closed Won,2023-12-01,2023-10-05,103
+1021,Compass Travel License Upgrade,25,19000,Closed Lost,2024-01-15,2023-11-10,104
+1022,Evergreen Packaging API Project,26,9000,Closed Won,2024-02-20,2023-12-15,101
+1023,Quantum Leap AI Analytics Platform,27,85000,Closed Won,2024-03-25,2024-01-20,103
+1024,Precision Robotics Implementation,29,110000,Closed Won,2024-06-10,2024-04-10,102
+1025,The Legal Eagle Premium Support,30,18000,Closed Won,2024-07-05,2024-05-01,104
+1026,BrightSpark Marketing CRM Deal,31,7500,Closed Lost,2023-04-02,2023-02-10,101
+1027,Ironclad Mining Data Suite,32,95000,Closed Won,2023-05-20,2023-03-15,102
+1028,PaperTrail Publishing Licenses,33,14000,Proposal Sent,2025-12-01,2025-10-15,104
+1029,Oceanic Shipping Logistics API,34,42000,Closed Won,2023-07-10,2023-05-05,101
+1030,Vanguard Defense Premium Support,35,220000,Closed Won,2023-08-15,2023-06-20,103
+1031,Zenith Architecture CRM Package,36,11000,Closed Won,2023-09-12,2023-07-10,104
+1032,SoundWave Audio Analytics Suite,37,45000,Negotiation,2025-11-20,2025-09-10,102
+1033,UrbanEdge Properties License Deal,38,38000,Closed Lost,2023-11-01,2023-09-05,103
+1034,FirstBridge Capital Data Security,40,72000,Closed Won,2024-01-05,2023-11-01,103
+1035,NetWeavers ISP Support Contract,41,21000,Closed Won,2024-02-10,2023-12-01,101
+1036,Heritage Bank Premium Licenses,42,180000,Closed Won,2024-04-01,2024-02-01,101
+1037,FastTrack Couriers API Upgrade,43,33000,Closed Won,2024-05-08,2024-03-05,102
+1038,CloudNine Hosting Analytics,44,29000,Proposal Sent,2026-01-15,2025-11-01,103
+1039,PharmaSafe Distribution CRM,45,55000,Closed Won,2024-07-20,2024-05-15,104
+1040,Cognitive Learning Co. Licenses,46,16000,Closed Won,2023-04-25,2023-03-01,104
+1041,Titan Heavy Machinery Support,47,88000,Closed Won,2023-06-15,2023-04-10,102
+1042,The Daily Chronicle Analytics,48,27000,Closed Lost,2023-07-10,2023-05-15,103
+1043,Alpha Investments Premium CRM,49,62000,Closed Won,2023-08-01,2023-06-05,104
+1044,ConnectSphere Social API Access,50,41000,Closed Won,2023-09-01,2023-07-01,103
+1045,Fusion Power Corp Data Suite,51,130000,Negotiation,2025-12-20,2025-10-01,104
+1046,EcoBuild Materials CRM Upgrade,52,19500,Closed Won,2023-11-15,2023-09-10,101
+1047,Precision Diagnostics Support,53,34000,Closed Won,2023-12-20,2023-10-15,102
+1048,The Gourmet Pantry Licenses,54,8000,Closed Lost,2024-01-10,2023-11-05,101
+1049,Stellar Space Systems Analytics,55,280000,Closed Won,2024-02-01,2023-12-01,103
+1050,Insight Analytics Implementation,56,48000,Closed Won,2024-03-18,2024-01-25,101
+1051,Momentum Fitness Premium CRM,57,23000,Proposal Sent,2026-01-30,2025-11-20,103
+1052,AquaMarine Fisheries Data Project,58,37000,Closed Won,2024-06-05,2024-04-01,104
+1053,PrintPerfect Solutions Upgrade,59,15000,Closed Won,2024-07-01,2024-05-10,102
+1054,Regal Hotels Group Analytics Suite,60,78000,Closed Won,2023-05-05,2023-03-01,104
+1055,Catalyst Chemicals Support Deal,61,115000,Closed Won,2023-06-01,2023-04-01,102
+1056,VirtuLearn Platforms CRM,62,36000,Closed Lost,2023-07-15,2023-05-20,103
+1057,TerraCycle Solutions API Access,63,29000,Closed Won,2023-08-10,2023-06-15,101
+1058,ChronoWatch Co. Premium License,64,44000,Closed Won,2023-09-20,2023-07-20,101
+1059,BioSphere Genetics Data Platform,65,350000,Negotiation,2026-02-15,2025-11-01,103
+1060,ProTune Automotive CRM Licenses,66,13000,Closed Won,2023-11-25,2023-09-20,102
+1061,HomeFront Insurance Analytics,67,95000,Closed Won,2024-01-08,2023-10-15,104
+1062,LeisureCraft Boats Support,68,26000,Closed Lost,2024-02-01,2023-12-01,104
+1063,PixelPoint Digital License Deal,69,11500,Closed Won,2024-02-22,2023-12-15,101
+1064,Unity Legal Firm Premium Support,70,31000,Closed Won,2024-04-10,2024-02-10,103
+1065,Nova Renewables Analytics,71,68000,Proposal Sent,2026-02-28,2025-12-10,102
+1066,Foresight AI Implementation,72,58000,Closed Won,2024-06-18,2024-04-15,103
+1067,The Vineyard Collective CRM,73,24000,Closed Won,2024-07-15,2024-05-10,104
+1068,StoneBridge Asset Mgmt Security,74,53000,Closed Won,2023-05-14,2023-03-10,104
+1069,ByteBurst Games Analytics,75,47000,Closed Lost,2023-06-01,2023-04-05,101
+1070,HelioTronics API Integration,76,39000,Closed Won,2023-06-28,2023-05-01,102
+1071,Summit Sports Gear Licenses,77,29000,Closed Won,2023-08-09,2023-06-10,103
+1072,Maritime Cargo Inc. Support,78,65000,Closed Won,2023-09-05,2023-07-05,101
+1073,Global Med Supplies CRM Upgrade,79,51000,Negotiation,2026-03-15,2025-12-20,103
+1074,Artisan Bakery Co. Support,80,9500,Closed Won,2023-11-08,2023-09-15,104
+1075,CyberGuardian Security Analytics,81,43000,Closed Won,2023-12-12,2023-10-10,101
+1076,Atlantic Airlines Data Platform,82,450000,Closed Won,2024-01-20,2023-11-01,103
+1077,Precision Agriculture API,83,37000,Closed Lost,2024-02-15,2023-12-20,101
+1078,GenieLogix License Expansion,84,26000,Closed Won,2024-04-25,2024-02-20,103
+1079,Med-Response Premium Support,85,33000,Closed Won,2024-05-22,2024-03-15,102
+1080,Dynamic Drones Analytics Suite,86,41000,Proposal Sent,2026-03-31,2026-01-05,103
+1081,The London Brew CRM Deal,87,17000,Closed Won,2024-07-01,2024-05-01,104
+1082,Continental Textiles Analytics,88,49000,Closed Won,2023-06-02,2023-04-01,101
+1083,Visionary VR Implementation,89,68000,Closed Won,2023-07-25,2023-05-20,103
+1084,North Sea Drilling Support,90,320000,Closed Lost,2023-09-10,2023-07-01,101
+1085,Parisian Perfumes Analytics,91,34000,Closed Won,2023-10-30,2023-09-01,104
+1086,Alpine Adventures License Deal,92,23000,Closed Won,2023-12-28,2023-10-20,102
+1087,Masterpiece Furniture CRM,93,28000,Negotiation,2026-04-10,2026-01-15,101
+1088,The Quantum Chip Data Suite,94,410000,Closed Won,2024-04-18,2024-02-10,103
+1089,Green Planet Foods Support,95,36000,Closed Won,2024-06-11,2024-04-05,101
+1090,Rhine River Cruises API,96,29000,Closed Won,2024-08-01,2024-06-01,102
+1091,Britannia Legal Premium Support,97,42000,Closed Won,2023-08-01,2023-06-01,104
+1092,Stateside Logistics Analytics,98,58000,Closed Won,2023-09-15,2023-07-20,103
+1093,EuroGrow Agriculture CRM,99,20000,Closed Lost,2024-01-05,2023-11-10,101
+1094,Amsterdam Tech Hub Licenses,100,12000,Closed Won,2024-08-10,2024-06-10,101

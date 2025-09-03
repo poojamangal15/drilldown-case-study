@@ -1,0 +1,9 @@
+product_id,product_name,description,unit_price,category
+501,Standard CRM License,Per-seat license for our standard CRM software.,1500,Software License
+502,Premium CRM License,Per-seat license with advanced analytics and support.,2500,Software License
+503,Data Analytics Suite,Cloud-based data analytics platform subscription.,4000,Software Subscription
+504,Implementation Services,On-site setup and configuration of our software.,5000,Consulting Services
+505,Support Package (Basic),12 months of standard email and phone support.,1000,Support
+506,Support Package (Premium),12 months of premium 24/7 support with a dedicated agent.,3000,Support
+507,API Access Tier 1,Basic access to our API for integrations.,500,API Services
+508,API Access Tier 2,Advanced API access with higher rate limits.,1200,API Services
