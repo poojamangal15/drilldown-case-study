@@ -1,0 +1,44 @@
+# dbt/models/schema.yml  (append below your current content)
+version: 2
+
+models:
+  - name: dim_companies
+    columns:
+      - name: company_id
+        tests: [unique, not_null]
+
+  - name: dim_products
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: fact_sales
+    columns:
+      - name: invoice_line_id
+        tests: [unique, not_null]
+      - name: company_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_companies')
+              field: company_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_products')
+              field: product_id
+
+  # ↓ add these once you create the mart models
+  - name: customer_ltv
+    description: "Revenue and deal metrics per customer."
+  - name: product_perf
+    description: "Units and revenue per product/category."
+  - name: sales_rep_perf
+    description: "Win/loss counts and win rate by rep."
+  - name: finance_dso
+    description: "Payment speed and exposure per company."
+  - name: product_bundles
+    description: "Co-purchased product pairs by invoice."
+  - name: ai__customer_snapshot
+    description: "AI-ready surface: company profile + LTV + finance signals."
