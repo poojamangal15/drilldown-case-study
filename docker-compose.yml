@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  airflow:
+    build: ./airflow
+    container_name: airflow
+    restart: unless-stopped
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__EXECUTOR: "SequentialExecutor"
+      PROJECT_ID: ${PROJECT_ID}
+      BQ_LOCATION: ${BQ_LOCATION}
+      DBT_PROFILES_DIR: /opt/airflow/dbt
+      GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/keys/gcp-sa.json
+    env_file:
+      - ./airflow/.env
+    volumes:
+      # your dbt project
+      - ./dbt:/opt/airflow/dbt
+      # airflow DAGs
+      - ./airflow/dags:/opt/airflow/dags
+      # mount only keys into the container (read-only)
+      - ./airflow/keys:/opt/airflow/keys:ro
+    ports:
+      - "8080:8080"
+    command: >
+      bash -c "
+      airflow db init &&
+      airflow users create --username admin --firstname A --lastname D --role Admin --email a@b.com --password admin &&
+      airflow webserver & airflow scheduler
+      "
