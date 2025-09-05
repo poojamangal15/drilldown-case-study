@@ -9,8 +9,8 @@ SELECT
   SAFE_CAST(employee_count AS INT64) AS employee_count,
   CASE
     WHEN SAFE_CAST(employee_count AS INT64) IS NULL THEN 'unknown'
-    WHEN SAFE_CAST(employee_count AS INT64) < 50 THEN 'small'
-    WHEN SAFE_CAST(employee_count AS INT64) < 250 THEN 'mid'
+    WHEN SAFE_CAST(employee_count AS INT64) < 100 THEN 'small'
+    WHEN SAFE_CAST(employee_count AS INT64) < 350 THEN 'mid'
     ELSE 'enterprise'
   END AS company_size_bucket,
   SAFE_CAST(created_date AS DATE) AS created_date,

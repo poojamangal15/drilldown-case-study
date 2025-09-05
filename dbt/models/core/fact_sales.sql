@@ -1,12 +1,12 @@
 {{ config(
-    materialized='table',
-    cluster_by=['company_id','invoice_id']
+    materialized = 'table',
+    cluster_by = ['company_id','invoice_id'],
 ) }}
 
 WITH deals_won AS (
   SELECT *
-  FROM {{ source('raw', 'deals') }}
-  WHERE LOWER(deal_stage) = 'closed won'
+  FROM {{ ref('stg_deals') }}
+  WHERE deal_stage_canonical = 'closed won'
 ),
 il AS (
   SELECT
@@ -16,19 +16,19 @@ il AS (
     SAFE_CAST(quantity AS INT64) AS quantity,
     SAFE_CAST(unit_price AS NUMERIC) AS line_unit_price,
     SAFE_CAST(line_total AS NUMERIC) AS line_amount
-  FROM {{ source('raw', 'invoice_lines') }}
+  FROM {{ source('raw','invoice_lines') }}
 ),
 inv AS (
   SELECT
     invoice_id,
     company_id,
     deal_id,
-    SAFE_CAST(invoice_date AS DATE) AS invoice_date,
-    SAFE_CAST(due_date AS DATE) AS due_date,
-    SAFE_CAST(total_amount AS NUMERIC) AS invoice_total_amount,
-    status AS payment_status,
-    SAFE_CAST(paid_date AS DATE) AS paid_date
-  FROM {{ source('raw', 'invoices') }}
+    invoice_date,
+    due_date,
+    paid_date,
+    total_amount AS invoice_total_amount,
+    payment_status_canonical AS payment_status
+  FROM {{ ref('stg_invoices') }}
 )
 SELECT
   d.deal_id,
@@ -50,5 +50,4 @@ SELECT
   CURRENT_TIMESTAMP() AS ingested_at
 FROM deals_won d
 JOIN inv i ON d.deal_id = i.deal_id AND d.company_id = i.company_id
-JOIN il l ON i.invoice_id = l.invoice_id
-
+JOIN il  l ON i.invoice_id = l.invoice_id

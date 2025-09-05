@@ -1,10 +1,10 @@
-# Sales Rep Performance
-
-{{ config(materialized='table') }}
+{{ config(materialized='table', description='Win rates by sales rep, canonical stages used.') }}
 
 WITH base AS (
-  SELECT owner_id AS sales_rep_id, LOWER(deal_stage) AS stage
-  FROM {{ source('raw','deals') }}
+  SELECT 
+    owner_id AS sales_rep_id, 
+    deal_stage_canonical AS stage
+  FROM {{ ref('stg_deals') }}
 )
 SELECT
   sales_rep_id,
