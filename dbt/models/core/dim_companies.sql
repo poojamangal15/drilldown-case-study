@@ -1,7 +1,7 @@
 {{ config(materialized='table', cluster_by=['industry','country']) }}
 
 SELECT
-  company_id,  -- keep as INT
+  company_id,
   company_name,
   industry,
   country,

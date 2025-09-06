@@ -20,7 +20,7 @@ SELECT
   CASE
     WHEN stage_norm IN ('prospecting','qualification','negotiation','closed won','closed lost','proposal')
       THEN stage_norm
-    WHEN stage_norm = 'proposal sent' THEN 'proposal'         -- <— key mapping for your data
+    WHEN stage_norm = 'proposal sent' THEN 'proposal'
     ELSE 'unknown'
   END AS deal_stage_canonical
 FROM base
