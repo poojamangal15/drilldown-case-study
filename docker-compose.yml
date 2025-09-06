@@ -8,8 +8,8 @@ services:
       AIRFLOW__CORE__EXECUTOR: "SequentialExecutor"
       PROJECT_ID: ${PROJECT_ID}
       BQ_LOCATION: ${BQ_LOCATION}
-      DBT_PROFILES_DIR: ${DBT_PROFILES_DIR}
-      GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS}
+      DBT_PROFILES_DIR: /opt/airflow/dbt
+      GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/keys/gcp-sa.json
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW__CORE__FERNET_KEY}
     env_file:
       - ./airflow/.env

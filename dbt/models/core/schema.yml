@@ -1,6 +1,5 @@
 version: 2
 
-# -------- CORE (staging + dims + fact) --------
 models:
   - name: stg_deals
     description: "Canonicalized deal stages."
@@ -53,18 +52,3 @@ models:
           - relationships:
               to: ref('dim_products')
               field: product_id
-
-  # -------- MARTS --------
-  # models/schema.yml
-
-  - name: sales_rep_perf
-    description: "Win/loss and win rate by sales rep (uses canonical stages)."
-    columns:
-      - name: sales_rep_id
-        tests: [not_null]
-      - name: win_rate
-        tests:
-          - dbt_utils.accepted_range:
-              min_value: 0
-              max_value: 1
-              inclusive: true

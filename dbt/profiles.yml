@@ -7,7 +7,7 @@ drilldown_profile:
       project: drilldown-case-study
       dataset: drilldown_raw
       location: EU
-      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+      keyfile: /opt/airflow/keys/gcp-sa.json
       threads: 4
 
     core:
@@ -16,7 +16,7 @@ drilldown_profile:
       project: drilldown-case-study
       dataset: drilldown_core
       location: EU
-      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+      keyfile: /opt/airflow/keys/gcp-sa.json
       threads: 4
 
     mart:
@@ -25,5 +25,5 @@ drilldown_profile:
       project: drilldown-case-study
       dataset: drilldown_mart
       location: EU
-      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+      keyfile: /opt/airflow/keys/gcp-sa.json
       threads: 4
