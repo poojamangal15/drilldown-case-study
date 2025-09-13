@@ -36,6 +36,16 @@ models:
       - name: product_id
         tests: [unique, not_null]
 
+  - name: dim_sales_reps
+    description: "Sales representatives dimension table with owner_id mapping"
+    columns:
+      - name: owner_id
+        tests: [unique, not_null]
+      - name: sales_rep_name
+        tests: [not_null]
+      - name: sales_rep_title
+        tests: [not_null]
+
   - name: fact_sales
     columns:
       - name: invoice_line_id
