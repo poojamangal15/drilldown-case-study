@@ -4,8 +4,17 @@
 ) }}
 
 WITH deals_won AS (
-  SELECT *
-  FROM {{ ref('stg_deals') }}
+  SELECT
+    deal_id,
+    deal_name,
+    company_id,
+    owner_id,
+    amount,
+    -- Now you can directly use deal_stage_canonical, created_date, close_date
+    deal_stage_canonical,
+    created_date,
+    close_date
+  FROM {{ ref('stg_deals') }} -- Reference the new, combined staging model
   WHERE deal_stage_canonical = 'closed won'
 ),
 il AS (
