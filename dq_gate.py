@@ -2,7 +2,7 @@ import os, sys
 from google.cloud import bigquery
 
 PROJECT_ID = os.environ.get("PROJECT_ID", "drilldown-case-study")
-MAX_STALE_DAYS = int(os.environ.get("FRESHNESS_MAX_DAYS", "365"))  # configurable
+MAX_STALE_DAYS = int(os.environ.get("FRESHNESS_MAX_DAYS", "365"))
 
 client = bigquery.Client(project=PROJECT_ID)
 

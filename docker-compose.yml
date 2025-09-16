@@ -25,3 +25,14 @@ services:
       airflow users create --username admin --firstname A --lastname D --role Admin --email a@b.com --password admin &&
       airflow webserver & airflow scheduler
       "
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./metabase-data:/metabase-data
+    restart: always
+
+volumes:
+  metabase-data:

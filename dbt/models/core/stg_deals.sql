@@ -29,7 +29,7 @@ SELECT
   company_id,
   owner_id,
   amount,
-  deal_stage,       -- Include if you need the original stage
+  deal_stage,       
   -- Canonicalize the deal stage
   CASE
     WHEN stage_norm IN ('prospecting','qualification','negotiation','closed won','closed lost','proposal')

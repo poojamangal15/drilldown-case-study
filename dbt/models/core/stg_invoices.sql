@@ -22,7 +22,6 @@ SELECT
   total_amount,
   CASE
     WHEN status_norm IN ('paid','sent','overdue') THEN status_norm
-    -- keep others explicit if your domain requires:
     WHEN status_norm IN ('draft') THEN 'draft'
     -- these two often don't belong in invoice.status; leave as 'unknown' unless your raw truly uses them
     WHEN status_norm IN ('closed won','closed lost') THEN 'unknown'
